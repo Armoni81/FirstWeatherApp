@@ -1,0 +1,389 @@
+*{ 
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.bckimg{
+    width:1700px;
+    height:1000px;
+    opacity:60%
+}
+.navi{
+    display: flex;
+   justify-content: space-between;
+   font-family: 'Monoton', cursive;
+}
+.exe{
+    font-size: 15pt;
+}
+.f4{
+    font-size: 22pt;
+    color: crimson;
+    opacity: 70%;  
+}
+.weathergrid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.header{
+    font-family: 'Sigmar One', cursive;
+    font-size: 15pt;
+    color:rgb(0, 195, 255)
+}
+.homes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 750px;
+    font-family: 'Monoton', cursive;
+    list-style-type:none;
+}
+.selection{
+    display: flex;
+    justify-content: flex-end;
+}
+input, button{
+    margin-right: 10px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Ephesis', cursive;
+    font-size: 50pt;
+    
+}
+.weatherdata{
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center
+}
+.data{
+    height: 350px;
+    width: 200px;
+    background-color: rgb(0, 195, 255);
+    border-radius: 50px;
+}
+.int{
+    padding:10px;
+    border:solid rgb(255, 94, 0) 3px;
+    border-radius: 10px;
+}
+.butt{
+    border-radius: 10px;
+
+}
+#box1{
+    font-size: 15pt;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+#box2{
+    font-size: 15pt;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: crimson;
+    animation-name: lol;
+    animation-duration: 6s;
+}
+#box3{
+    font-size: 15pt;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+#box4{
+    font-size: 15pt;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+}
+.b1{
+    background-image: url('temp.png');
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position-x: 10px;
+    background-size: 60px;
+    opacity: 70%;
+    
+}
+.b2{
+    background-image: url('2682842_breeze_fast_speed_weather_wind_icon.png');
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position-x: 10px;
+    background-size: 60px;
+    opacity: 70%;
+}
+.b3{
+    background-image: url('2682807_drop_high_humidity_percentage_precipitation_icon.png');
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position-x: 10px;
+    background-size: 60px;
+    opacity: 70%;
+}
+.b4{
+    background-image: url('1530391_weather_clouds_sun_sunny_icon.png');
+    background-repeat: no-repeat;
+    background-position-y: 30px;
+    background-position-x: 10px;
+    background-size: 60px;
+    opacity: 70%;
+}
+#myVideo {
+    position: fixed;
+    height: 850px;
+}
+.content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: url(./pexels-brett-sayles-1431822.jpg);
+    background-size: 2500px;
+    background-repeat: no-repeat;
+}
+#forecast{
+    -webkit-text-stroke:0.3vw rgb(77, 184, 216);
+    font-family: 'Bangers', cursive;
+    -webkit-text-fill-color: crimson;
+}
+.b1:hover {
+    opacity: 40%;
+}
+.b2:hover {
+    opacity: 40%;
+}
+.b3:hover {
+    opacity: 40%;
+}
+.b4:hover {
+    opacity: 40%;
+}
+
+@media all and (max-width:1107px){
+    .data{
+        height:350px;
+        width:150px
+    }
+}
+@media all and (max-width:980px) {
+   .data{
+       height:220px;
+       width:100px
+   }
+}
+@media all and (max-width:707px){
+    #forecast{
+        font-size: 35pt;
+        position: relative;
+        top:70px
+    }
+    .homes{
+        font-size:8pt;
+        display: flex;
+        justify-content:space-between;
+        padding-bottom: 300px;
+        
+    }
+    .exe{
+        position: relative;
+        left:85px;
+        font-size: 12pt;
+    }
+}
+@media all and (max-width:619px){
+    .data{
+        width:80px;
+        height:180px;
+    }
+    #box1{
+        font-size: 10pt;
+    }
+    #box2{
+        font-size: 10pt;
+    }
+    #box3{
+        font-size: 10pt;
+    }
+    #box4{
+        font-size: 10pt;
+    }
+    .b1{
+        background-size: 30px;
+    }
+    .b2{
+        background-size: 30px;
+    }
+    .b3{
+        background-size: 30px;
+    }
+    .b4{
+        background-size: 30px;
+    }
+    .header{
+        font-size: 11pt;
+        position: relative;
+        left:20px;
+        top:20px
+    }
+    .exe{
+        position: relative;
+        left:80px;
+        font-size: 12pt;
+    }
+}
+@media all and (max-width:530px){
+    .data{
+        width:70px;
+        height:180px;
+    }
+    .exe{
+        font-size: 8pt;
+        position: relative;
+        left:35px
+    }
+    .f4{
+        font-size: 18pt;
+    }
+    #input{
+        font-size: 8px;
+        width:129px
+
+    }
+
+}
+@media all and (max-width:460px){
+    .data{
+        width: 60px;
+        height:160px;
+    }
+    .b1{
+        background-size: 20px;
+    }
+    .b2{
+        background-size: 20px;
+    }
+    .b3{
+        background-size: 20px;
+    }
+    .b4{
+        background-size: 20px;
+    }
+    .header{
+        font-size: 12pt;
+    }
+    .homes{
+        font-size: 10pt;
+    }
+}
+@media all and (max-width:396px){
+    .data{
+        width:50px
+    }
+    #box1{
+        font-size: 8pt;
+    }
+    #box2{
+        font-size: 8pt;
+    }
+    #box3{
+        font-size: 8pt;
+    }
+    #box4{
+        font-size: 8pt;
+    }
+    #forecast{
+        font-size: 30pt;
+        position: relative;
+        top:70px
+    }
+    .homes{
+       
+    }
+
+}
+
+@media all and (max-width:320px){
+    .exe{
+        font-size: 4pt;
+        position:relative;
+        left:-2px
+    }
+    #input{
+        font-size: 4pt;
+        width:70px;
+        position:relative;
+        right:20px
+    }
+    #butt{
+        position: relative;
+        right:10px
+    }
+
+}
+@media all and (max-width:376px){
+    .homes{
+        padding: bottom 200px;
+        font-size: 8pt;
+    }
+    .header{
+        font-size: 7pt;
+        position: relative;
+        left:10px
+    }
+    .data{
+        position: relative;
+        bottom:40px
+    }
+}
+@media all and (max-width:320px){
+    #forecast{
+        font-size: 25pt;
+        position: relative;
+        bottom:50px
+        
+    }
+    .data{
+        width:55px;
+        height:140px;
+        position: relative;
+        bottom:60px;
+        left: 5px;
+    }
+    #box1{
+        font-size:7pt
+    }
+    #box2{
+        font-size:7pt
+    }
+    #box3{
+        font-size:7pt
+    }
+    #box4{
+        font-size:7pt
+    }
+}
+@media all and (max-width:414px){
+    .homes{
+        font-size: 8pt;
+    }
+    .header{
+        font-size:8pt;
+        text-align: center;
+        position:relative;
+        left:px
+    }
+}
