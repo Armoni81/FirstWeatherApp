@@ -42,6 +42,7 @@
     font-family: 'Monoton', cursive;
     list-style-type:none;
     font-weight: 500;
+    font-weight: bolder;
 }
 .selection{
     display: flex;
