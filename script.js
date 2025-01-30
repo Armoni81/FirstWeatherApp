@@ -27,6 +27,7 @@ fetch("https://api.openweathermap.org/data/2.5/weather?q=Atlanta&appid=7983f9630
        var element= document.getElementById("ATL")
        let i = (temp - 273.15) * 9/5 +32
        element.innerHTML = i.toFixed(0) + "°"
+       console.log('check')
        return data
     })
     fetch("https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=7983f9630bd1335bc5529b4c48cf145a")
