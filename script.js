@@ -27,7 +27,6 @@ const loadWeatherData = async () => {
       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=7983f9630bd1335bc5529b4c48cf145a`
     );
     const data = await response.json();
-    console.log(data, 'data')
     let box1 = document.getElementById("box1");
     let toFarenheight = ((data.main.temp - 273.25) * 9) / 5 + 32;
     let weather = data.weather[0].description;
